@@ -5,6 +5,8 @@
  */
 package minimizacao;
 
+import minimizacao.quine_mc_cluskey.QuineMcCluskey;
+
 /**
  * @author Micael Popping.
  */
@@ -12,10 +14,13 @@ public class Minimizacao {
     
     /**
      * Algoritimo que minimiza equaçoes de 2 niveis.
+     * @param numeroEntradas, quantidade de entradas.
      * @param equacao, equação que deve ser minimizada.
      */
-    public static void quineMcCluskey(){
+    public static void quineMcCluskey(int numeroEntradas, String equacao){
         
+        QuineMcCluskey minimizacao = new QuineMcCluskey(numeroEntradas, equacao);
         
+        System.out.println(minimizacao);
     }
 }
